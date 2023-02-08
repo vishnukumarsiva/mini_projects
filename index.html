@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/login_html.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+</head>
+<body  onload="set_date_at_dob()">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "id="signup_container">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "style="padding:0px;" id="signup_heading"><p style="margin:0px;">Sign Up</p></div>
+      <form onsubmit="return submit_fun()" action="/html/logged_in.html" class="signup_form" >
+        <div class="row_1">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="name_label" for="">Name*</label><br />
+                <input id="name_input"  type="text" placeholder="Enter Your Name"/><br />
+                <div class="error_message"id="name_msg"> </div>
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="dob_label"  for="">DOB*</label><br />
+                <input id="dob_input"  type="date"  /><br />
+                <div class="error_message"id="dob_msg"> </div>
+            </div> 
+        </div>
+        <div class="row_2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="email_label"  for="">Email*</label><br />
+                <input id="email_input"    type="text" placeholder="Enter Your Email" /><br />
+                <div class="error_message"id="email_msg"> </div>
+            </div> 
+            
+        </div>
+        <div class="row_3">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="phno_label"    for="">Phone Number*</label><br />
+                <input id="phno_input"    type="number" placeholder="Enter Your phone number"  /><br />
+                <div class="error_message"id="phone_msg" > </div>
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="gender_label"   > Gender*</label><br />
+                <select    name="" id="select_input"  >
+                <option value="select_your_gender">Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="rather_not_say">Rather Not Say</option>
+              </select>
+                <div class="error_message" id ="gender_msg"> </div>
+            </div> 
+        </div>
+        <div class="row_4">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="username_label"    id="label_id" for="">Username*</label><br />
+                <input id="username_input"    type="text" placeholder="Create your Username"  /><br />
+                <div class="error_message"id="username_msg"> </div>
+            </div> 
+        </div>
+        <div class="row_5">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="pass_label"    for="">Password*</label><br />
+              <input id="pass_input"  type="password" placeholder="Enter Your password"/><br />
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding:5px;">
+                <label id="cpass_label"   for="">Conform Password*</label><br />
+                <input id="cpass_input"   type="password" placeholder="Confirm Your password"  /><br />          
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="padding:5px;">
+                <div class="error_message" id="password_msg">  </div>
+            </div>
+        </div>
+        <div class="row_6">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:5px;">
+                <input type="checkbox" id="check_input" name="terms" value="accepted_terms_conditions">&nbsp;<label>I accept the <a href="">Terms & Conditions</a></label> 
+            <div class="error_message" id="checkbox_msg" > </div>
+            </div>
+        </div>
+        <div class="row_7">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding:5px 0px 5px 5px;">
+                <button id="submit_button" type="submit" >Submit</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding:5px 5px 5px 0px;">
+                <button id="reset_button"  type="reset" onclick="reset_all()">Reset</button><br>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:5px;">
+                <label id="acc_label_id">Are you have an Account?</label>&nbsp<a href="">Log in</a>
+            </div>
+        </div>    
+      </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/js/functions.js"></script>
+</html>

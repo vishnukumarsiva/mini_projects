@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(#9176db, #2a41c1);
+  height: 100vh;
+}
+#signup_container {
+  margin: 50px 30% 50px 30%;
+  background-color: white;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #000000;
+}
+#signup_heading {
+  text-align: center;
+  font-size: 36px;
+  background-color: #8aaae5;
+  border-radius: 10px;
+  color: white;
+}
+#name_label,
+#dob_label,
+#email_label,
+#phno_label,
+#gender_label,
+#pass_label,
+#cpass_label,
+#acc_label,
+#username_label {
+  padding: 10px 0px 0px 0px;
+  font-weight: 100;
+}
+
+#terms_label_id {
+  font-weight: 100;
+  margin-top: 10px;
+}
+#name_input,
+#dob_input,
+#email_input,
+#phno_input,
+#gender_input,
+#pass_input,
+#cpass_input,
+#username_input,
+#select_input {
+  box-shadow: 2px 3px 2px 3px #888888;
+  border: 0px;
+  border-radius: 2px;
+  height: 35px;
+  width: 100%;
+}
+#name_input:focus,
+#dob_input:focus,
+#email_input:focus,
+#phno_input:focus,
+#gender_input:focus,
+#pass_input:focus,
+#cpass_input:focus,
+#username_input:focus,
+#select_id:focus {
+  outline: none;
+}
+
+#submit_button,
+#reset_button {
+  height: 35px;
+  border: none;
+  background-color: #8aaae5;
+  color: white;
+  width: 100%;
+}
+#submit_button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.error_message{
+  padding:2px;
+}
+.error_message.invalid{
+  color:red;
+}
+.error_message.valid{
+  color:green;
+}
+
+#reset_button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* to hide a scrollbar in number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* end */
+@media screen and (max-width: 425px) {
+  #signup_container {
+    margin: 25px 5% 25px 5%;
+    width: 90%;
+    height: 900px;
+  }
+  #signup_heading {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #signup_container {
+    margin: 25px 15% 25px 15%;
+    width: 70%;
+  }
+  #signup_heading {
+    font-size: 24px;
+  }
+}
